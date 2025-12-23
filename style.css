@@ -6,7 +6,7 @@
     font-weight: 600;
 }
 header{
-    background: linear-gradient(180deg,rgb(0, 0, 0,0.5),rgb(0, 0, 0,0.5)),url(/images/gym/background.webp) no-repeat center/cover;
+    background: linear-gradient(180deg,rgb(0, 0, 0,0.5),rgb(0, 0, 0,0.5)),url(background.webp) no-repeat center/cover;
     background-attachment: fixed;
 }
 .head{
@@ -132,11 +132,11 @@ opacity: 0.8;
 }
 .group{
     border-radius: 50px;
-     background: linear-gradient(180deg,rgb(0, 0, 0,0.5),rgb(0, 0, 0,0.5)),url(/images/gym/tran2.png) no-repeat center/cover;
+     background: linear-gradient(180deg,rgb(0, 0, 0,0.5),rgb(0, 0, 0,0.5)),url(tran2.png) no-repeat center/cover;
 }
 .pers{
     border-radius: 50px;
-     background: linear-gradient(180deg,rgb(0, 0, 0,0.5),rgb(0, 0, 0,0.5)),url(/images/gym/tran1.png) no-repeat center/cover;
+     background: linear-gradient(180deg,rgb(0, 0, 0,0.5),rgb(0, 0, 0,0.5)),url(tran1.png) no-repeat center/cover;
 }
 
 .view-courses h1{
