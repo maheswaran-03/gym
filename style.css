@@ -65,6 +65,11 @@ header{
 .contect button:hover{
 opacity: 0.8;
 }
+ /* @media (max-width: 400px){
+    .logo{
+        font-size:5px;
+    } 
+ } */
  @media (max-width: 992px){
     .head{
         display: flex;
@@ -86,7 +91,7 @@ opacity: 0.8;
         display: block;
         margin-top: 3%;
         background-color: #660103;
-        right: 20%;
+        left: 20%;
         width: 70vw;
     }
     nav ul{
@@ -97,7 +102,8 @@ opacity: 0.8;
     .bl:hover .blog{
         display: none;
     }
- }
+}
+ 
 .head-content{
     padding: 35vh 7vw;
     color: white;
@@ -125,7 +131,7 @@ opacity: 0.8;
 }
 .view-courses{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     text-align: center;
     width: 100%;
     background-color: black;
@@ -133,15 +139,24 @@ opacity: 0.8;
 .group{
     border-radius: 50px;
      background: linear-gradient(180deg,rgb(0, 0, 0,0.5),rgb(0, 0, 0,0.5)),url(tran2.png) no-repeat center/cover;
+     width: 100%;
 }
 .pers{
     border-radius: 50px;
      background: linear-gradient(180deg,rgb(0, 0, 0,0.5),rgb(0, 0, 0,0.5)),url(tran1.png) no-repeat center/cover;
+     width: 100%;
 }
-
+ @media (max-width: 300px){
+    .group{
+        width: 50vmax;
+    }
+    .pers{
+        width: 50vmax;
+    }
+ }
 .view-courses h1{
     color: white;
-    font-size: 2.5rem;
+    font-size: 2.5vmax;
     text-transform: uppercase;
     padding: 130px 0 25px;
     word-spacing: -5px;
@@ -180,15 +195,34 @@ opacity: 0.8;
     padding: 20px 0;
     font-size: 30px;
 }
+.offer-img img{
+    width: 100%;
+}
 .offer-img{
     color: white;
     display: grid;
-     grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
      text-align: center;
+     gap: 40px;
+     margin: 0 60px;
+}
+@media(max-width: 430px){
+    .offer-img{
+        margin: auto;
+    }
+    .offer-img img{
+        width: 70%;
+    }
 }
 .img-container{
     background-color: black;
-     padding: 200px 70px 0 70px;
+    padding: 0 50px; 
+}
+@media(max-width: 330px){
+    .img-container{
+        padding: 0;
+    }
+
 }
 .images-1{
     display: grid;
@@ -201,7 +235,7 @@ opacity: 0.8;
     padding-top: 30px;
     display: grid;
      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    grid-template-rows: 500px;
+    grid-template-rows:500px;
      gap: 40px;
 }
 .img-container img{
@@ -217,7 +251,7 @@ opacity: 0.8;
     color:transparent;
     -webkit-text-stroke: 1px white;
     text-align: center;
-    padding: 100px 0;
+    padding: 80px 0 40px 0;
 }
 .pricing-contain{
     color: white;
@@ -275,6 +309,12 @@ opacity: 0.8;
     gap: 30px;
     margin: 0 60px;
 }
+@media(max-width: 330px){
+    .pricing-cont{
+        width: 200px;
+        margin: auto;
+    }
+}
 .about-me{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
@@ -283,6 +323,17 @@ opacity: 0.8;
 .about-container{
      padding: 45px 60px;
     background-color: black;
+}
+@media(max-width: 520px){
+    .about-container{
+        padding: 0;
+        margin: auto;
+    }
+    .about-me{
+        gap: 50px;
+        padding: 50px 0;
+        justify-content: center;
+    }
 }
 .about-me .about-img{
     width: 45vw;
@@ -305,16 +356,18 @@ opacity: 0.8;
     line-height: 30px;
 }
 .about-text button{
-    padding: 17px 50px;
+    padding: 2vmin 5vmin;
     font-size: 1.2em;
     background-color: black;
     color: white;
     border: 1px solid white;
     margin-top: 40px;
+    text-align: center;
 }
 .from-blog{
     background-color: black;
-    text-align: center;
+    /* text-align: center; */
+    margin: auto;
 }
 .from-blog h1{
      font-family: 'Bebas Neue', sans-serif;
@@ -324,9 +377,26 @@ opacity: 0.8;
     text-align: center;
     padding: 10px 0 50px 0;
 }
+.gym-fit img{
+    width: 100%;
+}
+.gym-fit-2 img{
+    width: 100%;
+}
 .gym-fit{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(600px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    /* text-align: center; */
+    gap: 20px;
+    margin: 0 30px;
+}
+@media(max-width: 360px){
+    .gym-fit img{
+        width: 80vmin;
+        margin: 0;
+        padding: auto;
+        justify-content: center;
+    }
 }
 .from-blog figcaption span{
     font-size: 0.6em;
@@ -335,4 +405,32 @@ opacity: 0.8;
     color: white;
     line-height: 30px;
     font-size: 1.5vmax;
+}
+.details{
+    background-color:rgb(22, 22, 22);
+    height: 50vh;
+    padding: 0 70px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    color: white;
+    gap: 30px;
+}
+.detail-cont .box{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: red;
+}
+.detail-cont{
+    display: flex;
+    align-items:center;
+    gap: 20px;
+}
+.detail-cont span{
+    font-size: 1.7em;
+    line-height: 50px;
+}
+.detail-cont p{
+    font-size: 2.3vmin;
 }
